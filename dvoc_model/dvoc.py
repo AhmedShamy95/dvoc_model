@@ -57,7 +57,8 @@ if __name__ == "__main__":
     Rf = 0.4
 
     # simulation parameters
-    dt = 1 / 10e3
+    #the lower dt, the better but 1/10e3 did not work properly for me
+    dt = 1 / 10e4
     ts = np.arange(0, 500e-3, dt)
 
     # grid parameters
